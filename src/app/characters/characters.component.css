@@ -1,0 +1,30 @@
+.c1{
+    background-color: darkgray
+}
+.header{
+    background-color: rgb(8, 6, 31);
+    display: block;
+    padding: 3%;
+    color:white;
+    font-size: 34px;
+    border-radius:3px;  
+}
+
+.main-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    border-color: rgb(80, 190, 52);
+    border: solid;
+    font-size: 23px;
+    border-radius: 20px;
+    background-color: rgb(3, 3, 19); 
+    color: rgb(20, 20, 17);
+    width:auto;
+}
+.card-title{
+    font-size: 23px;
+    color: brown
+}

@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <div class="container c1 main-row">
+    <div class="row col-12" >
+      <div class="card col-6" *ngFor="let x of detail" style="width: 28rem;height :16rem">
+        <div class="card-body">
+          <h5 class="card-title">Characters</h5>
+          <p class="card-text" style="color:darkseagreen">{{x.gender}}</p>
+          <a (click)="test(x)" class="btn btn-primary">See Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

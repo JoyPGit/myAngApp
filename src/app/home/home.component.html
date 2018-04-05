@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="container c1 main-row">
+    <div class="row col-12"> 
+
+      <div class="card col-4" style="width: 28rem;height :16rem">
+        <div  class="card-body" >
+          <h5 class="card-title">Books</h5>
+          <p class="card-text"></p>
+          <a [routerLink]="['/books']" class="btn btn-primary">Go to Books</a>
+        </div>
+      </div>
+
+      <div class="card col-4 card2" style="width: 28rem;height :16rem">
+        <div class="card-body">
+          <h5 class="card-title">Characters</h5>
+          <p class="card-text"></p>
+          <a [routerLink]="['/characters']" class="btn btn-primary">Go to Characters</a>
+        </div>
+      </div>
+
+      <div class="card col-4" style="width: 28rem;height :16rem">
+        <div class="card-body">
+          <h5 class="card-title">Houses</h5>
+          <p class="card-text"></p>
+          <a [routerLink]="['/houses']" class="btn btn-primary">Go to Houses</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <div class="container c1 main-row">
+    <div class="row" *ngIf="chars.length>0">
+      <div class="card" *ngFor="let x of chars" style="width: auto;height :auto">
+        <div class="card-body col-md-4">
+          <h5 class="card-title">Characters</h5>
+          <p class="card-text" style="color:darkseagreen">{{x.aliases}}</p>
+          <a [routerLink]="['/details']" (click)="test(x)" class="btn btn-primary">See Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

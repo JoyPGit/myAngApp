@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <div class="container c1 main-row">
+    <div class="row col-12" *ngIf="houses.length>0">
+      <div class="card col-6" *ngFor="let x of houses" style="width: 28rem;height :16rem">
+        <div class="card-body">
+          <h5 class="card-title">Houses</h5>
+          <p class="card-text" style="color:darkseagreen">{{x.name}}</p>
+          <a [routerLink]="['/details']" (click)="test(x)" class="btn btn-primary">See Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

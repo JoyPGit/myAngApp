@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="container c1 main-row">
+    <div class="row col-12" *ngIf="bookHttp.length>0">
+      <div class="card col-4" *ngFor="let x of bookHttp" style="width: 28rem;height :16rem">
+        <div class="card-body">
+          <h5 class="card-title">Books</h5>
+          <p class="card-text">{{x.name}}</p>
+          <a [routerLink]="['/details']" class="btn btn-primary">See Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
